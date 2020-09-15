@@ -249,10 +249,10 @@ Function Start-ESXHC{
 
 #endregion funciones
 
-$vclist  = @('')
+$vclist  = @('bldresvmvc6.boulder.ibm.com')
 
-$user    = ''
-$pass    = ''
+$user    = 'us\aemonzon'
+$pass    = 'Ozzy2015Riff2020'
 
 $fullreport = @()
 
