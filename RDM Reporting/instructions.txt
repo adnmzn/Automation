@@ -1,0 +1,38 @@
+Instructions to use the Get-AllRDMs script to make a report of all Virtual and Physical Raw Device Mapping
+
+1. Copy the folder RDM to your Desktop on any of the Jump Servers. 
+
+2. This folder contains 3 files:
+
+	- Get-AllRDMs.ps1 script
+	- vclist.txt this is the file with the list of vCenters
+	- This instruction file
+	
+3. Edit the vclist.txt to add/remove vCenters. I have included all vCenters in our scope by default
+
+4. If you want to check RDM on WSSDOM and BMS environments first make sure you're logged into their firewalls
+
+5. Right click the get-all-rdm.ps1 and edit it with Notepad or Powershell ISE
+
+6. Go to lines 4,5 and 7,8 to edit the US and CPC user/password variables with your credentials. Example:
+
+	$ususer        = '<your US\ id>'
+	$uspass        = '<your password>'
+
+	$cpcuser       = '<your CPC\ id>'
+	$cpcpass       = '<your password>'
+	
+	Note: Don't remove the single quotes! Keep them
+	
+5. Once you have the vclist.txt ready and you're logged into WSSDOM and BMS firewalls open Powershell as Administrator
+(right-click the Powershell icon on your taskbar and click Run As Administrator)
+
+6. Change directory to your Desktop path. Example: cd c:\users\aemonzon\desktop\RDM
+
+7. Once you're placed in the RDM directory run the script by typing .\get-all-rdm.ps1
+
+8. The script will read the vclist.txt, will attempt to connect to each vCenter and for each vCenter it will gather the list of VMs with RDM attached
+
+9. The script will generate a csv file with the list of RDM found. 
+
+10. Once you're done and happy with the results remove your passwords from the get-all-rdm.ps1 script!

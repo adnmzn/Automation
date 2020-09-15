@@ -1,0 +1,6 @@
+m41p-n-vcenter-001.az1.ash.cpc.ibm.com
+m42p-n-vcenter-001.az2.ash.cpc.ibm.com
+m51p-n-vcenter-001.az11.dal.cpc.ibm.com
+m52p-n-vcenter-001.az12.dal.cpc.ibm.com
+b02peivis002labvc.ciolab.ibm.com
+b02peivis001labvc.ciolab.ibm.com
