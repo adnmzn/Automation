@@ -64,7 +64,7 @@ Function Get-ComplianceStatus{
 
             if ($detected -eq '[] /scratch/log') {
                 
-                $compliance = 'UNCOMPLIANT'
+                $compliance = 'COMPLIANT'
                 
             }
 
